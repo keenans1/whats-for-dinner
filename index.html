@@ -1,10 +1,107 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    
-  </body>
-  <script type="text/javascript" src="main.js"></script>
+
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="nav-bar">
+
+    <h2>What's for Dinner?</h2>
+
+    <button id="addRecipe">ADD A RECIPE</button>
+
+
+  </header>
+
+  <!-- <img src="assets/burger-friends.jpg" alt="burgers and friends" /> -->
+  <section>
+
+    <div class="whiteWindows">
+
+      <h1>What are you looking for?</h1>
+
+      <div>
+
+        <input type="radio" id="side" name="meal_options" value="side">
+        <label for="side">Side</label><br>
+        <br />
+        <input type="radio" id="mainDish" name="meal_options" value="mainDish">
+        <label for="cmainDishs">Main Dish</label><br>
+        <br />
+        <input type="radio" id="dessert" name="meal_options" value="dessert">
+        <label for="dessert">Dessert</label><br>
+        <br />
+        <input type="radio" id="entireMeal" name="meal_options" value="entireMeal">
+        <label for="entireMeal">Entire Meal</label>
+        <br />
+        <br />
+
+      </div>
+
+      <button id="letsCookButton">LET'S COOK!</button>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="whiteWindows">
+
+
+
+
+      <div class="pot">
+
+        <img class="pot" src="assets/cookpot.svg" />
+
+      </div>
+
+
+
+
+
+
+
+      <div id="userMenuItem" class="hidden">
+
+        <div class="menuItemOutput">
+
+          <h3>You should make:</h3>
+          <h1 id="menuItemDisplayed"></h1>
+
+        </div>
+
+
+
+        <div class="clearButtonPosition">
+
+          <button id="clearButton">CLEAR</button>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+</body>
+
+<script type="text/javascript" src="main.js"></script>
+
 </html>

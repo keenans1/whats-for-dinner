@@ -8,3 +8,95 @@ red - #ee5253
 
 */
 
+.hidden {
+    display: none !important;
+}
+
+body {
+    background-image: url(assets/burger-friends.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+    background-color: #0fb9b1;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#addRecipe {
+    border-radius: 5px;
+    border: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.whiteWindows {
+    background-color: white;
+    border-width: 0px;
+    border-style: solid;
+    opacity: .8;
+    /* padding-top: 65px; */
+    margin-left: -50px;
+    padding-left: 35px;
+    /* padding-right: 75px; */
+    margin-top: 65px;
+    height: 400px;
+    width: 500px;
+}
+
+#letsCookButton {
+    background-color: #0fb9b1;
+    border-radius: 5px;
+    border: none;
+    opacity: 1;
+    height: 3vh;
+    width: 10vw;
+}
+
+#clearButton {
+    background-color: #95a5a6;
+    border-radius: 5px;
+    border: none;
+    opacity: 1;
+    height: 3vh;
+    width: 5vw;
+}
+
+.pot {
+    height: 20vh;
+    width: 30vw;
+    margin-top: 75px;
+}
+
+/* .clearButtonPosition {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.menuItemOutput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section>div>div>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
