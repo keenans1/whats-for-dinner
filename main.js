@@ -50,23 +50,26 @@ var desserts = [
 
 // query selectors
 
-var menuItemDisplayed = document.getElementById('menuItemDisplayed');
+var menuItemDisplayed = document.getElementById('menu-item-displayed');
 
-var letsCookButton = document.getElementById('letsCookButton');
-var clearButton = document.getElementById('clearButton');
+var letsCookButton = document.getElementById('lets-cook-button');
+var clearButton = document.getElementById('clear-button');
 
 var side = document.getElementById('side');
-var mainDish = document.getElementById('mainDish');
+var mainDish = document.getElementById('main-dish');
 var dessert = document.getElementById('dessert');
-var entireMeal = document.getElementById('entireMeal');
+var entireMeal = document.getElementById('entire-meal');
 
 var potImage = document.querySelector('.pot');
-var displayedMenuResult = document.getElementById('userMenuItem');
+var displayedMenuResult = document.getElementById('user-menu-item');
+
+var viewAllRecipesButton = document.getElementById('view-all-recipes-button');
 
 //event listeners
 
 letsCookButton.addEventListener('click', showMenuItem);
 clearButton.addEventListener('click', clearDish);
+viewAllRecipesButton.addEventListener('click', showAllRecipes);
 
 //event handlers
 
@@ -93,6 +96,8 @@ function showMenuItem() {
         menuItemDisplayed.innerText = desserts[randomDessertNum];
     } else if (entireMeal.checked) {
         menuItemDisplayed.innerText = `${mains[randomMainNum]} with a side of ${sides[randomSideNum]} and ${desserts[randomDessertNum]} for dessert!`;
+    } else {
+        alert('Must select a menu category first!');
     }
 }
 
@@ -100,4 +105,8 @@ function clearDish() {
     menuItemDisplayed.innerText = '';
     potImage.classList.remove('hidden');
     displayedMenuResult.classList.add('hidden');
+}
+
+function showAllRecipes() {
+    console.log('hi');
 }

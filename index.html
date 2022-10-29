@@ -7,92 +7,75 @@
 
 <body>
 
-  <header class="nav-bar">
+  <header class="navBar">
 
     <h2>What's for Dinner?</h2>
 
-    <button id="addRecipe">ADD A RECIPE</button>
+    <button id="add-recipe">ADD A RECIPE</button>
 
 
   </header>
 
-  <!-- <img src="assets/burger-friends.jpg" alt="burgers and friends" /> -->
-  <section>
+
+  <section id="section-1">
+
 
     <div class="whiteWindows">
 
-      <h1>What are you looking for?</h1>
+      <h1 style="padding-top: 30px">What are you looking for?</h1>
 
-      <div>
+      <div id="radio-buttons">
 
         <input type="radio" id="side" name="meal_options" value="side">
         <label for="side">Side</label><br>
         <br />
-        <input type="radio" id="mainDish" name="meal_options" value="mainDish">
-        <label for="cmainDishs">Main Dish</label><br>
+        <input type="radio" id="main-dish" name="meal_options" value="mainDish">
+        <label for="main-dish">Main Dish</label><br>
         <br />
         <input type="radio" id="dessert" name="meal_options" value="dessert">
         <label for="dessert">Dessert</label><br>
         <br />
-        <input type="radio" id="entireMeal" name="meal_options" value="entireMeal">
-        <label for="entireMeal">Entire Meal</label>
+        <input type="radio" id="entire-meal" name="meal_options" value="entireMeal">
+        <label for="entire-meal">Entire Meal</label>
         <br />
         <br />
 
       </div>
 
-      <button id="letsCookButton">LET'S COOK!</button>
+      <button id="lets-cook-button">LET'S COOK!</button>
 
     </div>
 
 
-
-
-
-
-
-    <div class="whiteWindows">
-
-
-
+    <div id="box-1" class="whiteWindows">
 
       <div class="pot">
-
-        <img class="pot" src="assets/cookpot.svg" />
-
+        <img class="pot" src="assets/cookpot.svg" alt="burgers and friends" />
       </div>
 
-
-
-
-
-
-
-      <div id="userMenuItem" class="hidden">
+      <div id="user-menu-item" class="hidden">
 
         <div class="menuItemOutput">
-
           <h3>You should make:</h3>
-          <h1 id="menuItemDisplayed"></h1>
-
+          <h1 style="font-size: 25px;" id="menu-item-displayed"></h1>
         </div>
 
-
-
-        <div class="clearButtonPosition">
-
-          <button id="clearButton">CLEAR</button>
-
+        <div id="clear" class="clearButtonPosition">
+          <button id="clear-button">CLEAR</button>
         </div>
 
       </div>
 
+    </div>
 
 
+  </section>
 
 
+  <section id="section-2">
 
-
+    <div>
+      <button id="view-all-recipes-button" style="color: red">View All Recipes</button>
     </div>
 
   </section>
