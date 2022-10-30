@@ -6,10 +6,12 @@
 </head>
 
 <body>
+
   <header class="navBar">
     <h2>What's for Dinner?</h2>
-    <button id="add-recipe">ADD A RECIPE</button>
+    <button id="view-all-recipes-button">View All Recipes</button>
   </header>
+
   <section id="section-1" class="">
     <div class="whiteWindows">
       <h1 style="padding-top: 30px">What are you looking for?</h1>
@@ -44,9 +46,9 @@
         </div>
       </div>
     </div>
-    <div>
+    <!-- <div>
       <button id="view-all-recipes-button" style="color: red">View All Recipes</button>
-    </div>
+    </div> -->
 
   </section>
 
@@ -55,18 +57,28 @@
     <div class="whiteWindows">
       <h1>All Sides</h1>
       <ul id="sides-list"></ul>
+      <button id="add-side-button">Add a New Side</button>
+      <input id="side-input" />
     </div>
 
 
     <div class="whiteWindows">
       <h1>All Mains</h1>
       <ul id="mains-list"></ul>
+      <button id="add-main-button">Add a New Main</button>
+      <input id="main-input" />
     </div>
 
 
-    <div class="whiteWindows">
+    <div id="formatted-recipes" class="whiteWindows">
       <h1>All Desserts</h1>
       <ul id="desserts-list"></ul>
+      <button id="add-dessert-button">Add a New Dessert</button>
+      <input id="dessert-input" />
+    </div>
+
+    <div>
+      <button id="back-home-button">Back to Home</button>
     </div>
 
 

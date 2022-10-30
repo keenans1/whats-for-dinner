@@ -48,6 +48,7 @@ var desserts = [
     'Eclairs'
 ];
 
+
 // query selectors
 
 var menuItemDisplayed = document.getElementById('menu-item-displayed');
@@ -72,11 +73,27 @@ var dessertsList = document.getElementById('desserts-list');
 var section1 = document.getElementById('section-1');
 var section2 = document.getElementById('section-2');
 
+var backToHome = document.getElementById('back-home-button');
+
+var listedRecipes = document.getElementById('formatted-recipes');
+
+var addSideButton = document.getElementById('add-side-button');
+var addMainButton = document.getElementById('add-main-button');
+var addDessertButton = document.getElementById('add-dessert-button');
+
+var sideInput = document.getElementById('side-input');
+var mainInput = document.getElementById('main-input');
+var dessertInput = document.getElementById('dessert-input');
+
 //event listeners
 
 letsCookButton.addEventListener('click', showMenuItem);
 clearButton.addEventListener('click', clearDish);
 viewAllRecipesButton.addEventListener('click', showAllRecipes);
+backToHome.addEventListener('click', goBackHome);
+addSideButton.addEventListener('click', addSide);
+addMainButton.addEventListener('click', addMain);
+addDessertButton.addEventListener('click', addDessert);
 
 //event handlers
 
@@ -115,23 +132,56 @@ function clearDish() {
 }
 
 function showAllRecipes() {
-
     section1.classList.add('hidden');
     section2.classList.remove('hidden');
-
 
     for (var i = 0; i < sides.length; i++) {
         sidesList.innerHTML += `<i class="fa-solid fa-trash-can"></i> <li style="list-style: none;">${sides[i]}</li>`;
     }
-
     for (var i = 0; i < mains.length; i++) {
-        mainsList.innerHTML += `<li style="list-style: none;">${mains[i]}</li>`;
+        mainsList.innerHTML += `<i class="fa-solid fa-trash-can"></i> <li style="list-style: none;">${mains[i]}</li>`;
+    }
+    for (var i = 0; i < desserts.length; i++) {
+        dessertsList.innerHTML += `<i class="fa-solid fa-trash-can"></i> <li style="list-style: none;">${desserts[i]}</li>`;
     }
 
-    for (var i = 0; i < desserts.length; i++) {
-        dessertsList.innerHTML += `<li style="list-style: none;">${desserts[i]}</li>`;
-    }
+
 }
 
-// separate stuff
+// sidesList.innerHTML += `<button id="add-side-button">Add a new Side</button><input/>`;
+// mainsList.innerHTML += `<button id="add-main-button">Add a new Main</button><input/>`;
+// dessertsList.innerHTML += `<button id="add-dessert-button">Add a new Dessert</button><input/>`;
 
+function goBackHome() {
+
+    sidesList.innerHTML = '';
+    mainsList.innerHTML = '';
+    dessertsList.innerHTML = '';
+
+    section1.classList.remove('hidden');
+    section2.classList.add('hidden');
+}
+
+function addSide() {
+    sides.push(sideInput.value);
+    sidesList.innerHTML = '';
+    mainsList.innerHTML = '';
+    dessertsList.innerHTML = '';
+    showAllRecipes();
+}
+
+function addMain() {
+    mains.push(mainInput.value);
+    sidesList.innerHTML = '';
+    mainsList.innerHTML = '';
+    dessertsList.innerHTML = '';
+    showAllRecipes();
+}
+
+function addDessert() {
+    desserts.push(dessertInput.value);
+    sidesList.innerHTML = '';
+    mainsList.innerHTML = '';
+    dessertsList.innerHTML = '';
+    showAllRecipes();
+}
