@@ -65,6 +65,13 @@ var displayedMenuResult = document.getElementById('user-menu-item');
 
 var viewAllRecipesButton = document.getElementById('view-all-recipes-button');
 
+var sidesList = document.getElementById('sides-list');
+var mainsList = document.getElementById('mains-list');
+var dessertsList = document.getElementById('desserts-list');
+
+var section1 = document.getElementById('section-1');
+var section2 = document.getElementById('section-2');
+
 //event listeners
 
 letsCookButton.addEventListener('click', showMenuItem);
@@ -108,5 +115,23 @@ function clearDish() {
 }
 
 function showAllRecipes() {
-    console.log('hi');
+
+    section1.classList.add('hidden');
+    section2.classList.remove('hidden');
+
+
+    for (var i = 0; i < sides.length; i++) {
+        sidesList.innerHTML += `<i class="fa-solid fa-trash-can"></i> <li style="list-style: none;">${sides[i]}</li>`;
+    }
+
+    for (var i = 0; i < mains.length; i++) {
+        mainsList.innerHTML += `<li style="list-style: none;">${mains[i]}</li>`;
+    }
+
+    for (var i = 0; i < desserts.length; i++) {
+        dessertsList.innerHTML += `<li style="list-style: none;">${desserts[i]}</li>`;
+    }
 }
+
+// separate stuff
+
