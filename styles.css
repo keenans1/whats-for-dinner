@@ -48,7 +48,6 @@ body {
 #section-2 {
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-end; */
     flex-wrap: wrap;
 }
 
@@ -88,11 +87,6 @@ body {
     margin-top: 62px;
 }
 
-/* .clearButtonPosition {
-    display: flex;
-    justify-content: flex-end;
-} */
-
 .menuItemOutput {
     display: flex;
     flex-direction: column;
@@ -102,25 +96,13 @@ body {
     margin-bottom: 75px;
 }
 
-
 #radio-buttons {
     padding: 25px 0px 25px 20px;
-    /* top right bottom left */
 }
-
-
 
 #box-1>#user-menu-item>#clear {
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
     justify-content: flex-end;
-    /* align-items: flex-end;
-    align-content: stretch; */
     padding-right: 25px;
     padding-top: 25px;
 }
-
-
-
-/* nth child 3 */
