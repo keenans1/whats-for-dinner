@@ -1,30 +1,3 @@
-# What's for Dinner?
-
-## Overview
-
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
 ______________________________________________________  
 
 # What's for Dinner? 
@@ -32,20 +5,39 @@ ______________________________________________________
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
 
+for this project i built a page that will generate a random meal at the users discretion. It will show the meal when the user wants it to appear, and disappear when the user clicks the clear button.
+
+
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
+
+all they would need to do is go to my repo in github, fork it, and clone it down to their local machine
+
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
+![Screenshot 2022-10-30 at 5 42 07 PM](https://user-images.githubusercontent.com/86252684/198908033-ba2404bb-ed71-4c05-8b2c-5a5b8b41f17d.png)
+
+
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+
+I worked on it for at least 2-3 hours everyday. We had approximately 5 or 6 days on this project. We are 3 weeks into mod 1
 
 ### Contributors:
 [//]: <> (Who worked on this application? Link to their GitHubs.)
 
+NA
+
 ### Learning Goals:
 [//]: <> (What were the learning goals of this project? What tech did you work with?)
 
+learning goals were to become more familiar with CSS/HTML and work on the JS fundamentals more.
+
+
 ### Wins + Challenges:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+
+The wins were i got 2 adventures working. I struggled getting the third working and thus did not get completed. I also struggled quite a bit with the CSS.
+Although i wasnt fully able to get over these hurdles, I still made some good progress
