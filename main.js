@@ -144,13 +144,7 @@ function showAllRecipes() {
     for (var i = 0; i < desserts.length; i++) {
         dessertsList.innerHTML += `<i class="fa-solid fa-trash-can"></i> <li style="list-style: none;">${desserts[i]}</li>`;
     }
-
-
 }
-
-// sidesList.innerHTML += `<button id="add-side-button">Add a new Side</button><input/>`;
-// mainsList.innerHTML += `<button id="add-main-button">Add a new Main</button><input/>`;
-// dessertsList.innerHTML += `<button id="add-dessert-button">Add a new Dessert</button><input/>`;
 
 function goBackHome() {
 
